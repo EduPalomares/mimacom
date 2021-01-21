@@ -17,6 +17,10 @@ const Product = (props: IProduct) => {
   const storedProducts: any = useSelector((state: RootState) => state.products)
   const stock = storedProducts[id]?.stock || 0
 
+  const addProduct = () => {
+    dispatch(addToBasket(id))
+  }
+
   return (
     <>
       <div className="product">
@@ -32,10 +36,7 @@ const Product = (props: IProduct) => {
         </div>
         <div className="product__actions">
           <div className="product__stock">{stock} left</div>
-          <button
-            disabled={stock === 0}
-            onClick={() => dispatch(addToBasket(id))}
-          >
+          <button disabled={stock === 0} onClick={addProduct}>
             + Add
           </button>
         </div>
