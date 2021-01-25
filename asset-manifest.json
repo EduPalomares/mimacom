@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/mimacom/static/css/main.4ed0cfe9.chunk.css",
-    "main.js": "/mimacom/static/js/main.91523cd3.chunk.js",
-    "main.js.map": "/mimacom/static/js/main.91523cd3.chunk.js.map",
+    "main.js": "/mimacom/static/js/main.42a09dc3.chunk.js",
+    "main.js.map": "/mimacom/static/js/main.42a09dc3.chunk.js.map",
     "runtime-main.js": "/mimacom/static/js/runtime-main.556c157b.js",
     "runtime-main.js.map": "/mimacom/static/js/runtime-main.556c157b.js.map",
     "static/css/2.9901cfd6.chunk.css": "/mimacom/static/css/2.9901cfd6.chunk.css",
-    "static/js/2.d5743b1e.chunk.js": "/mimacom/static/js/2.d5743b1e.chunk.js",
-    "static/js/2.d5743b1e.chunk.js.map": "/mimacom/static/js/2.d5743b1e.chunk.js.map",
+    "static/js/2.f4ba71ba.chunk.js": "/mimacom/static/js/2.f4ba71ba.chunk.js",
+    "static/js/2.f4ba71ba.chunk.js.map": "/mimacom/static/js/2.f4ba71ba.chunk.js.map",
     "index.html": "/mimacom/index.html",
     "static/css/2.9901cfd6.chunk.css.map": "/mimacom/static/css/2.9901cfd6.chunk.css.map",
     "static/css/main.4ed0cfe9.chunk.css.map": "/mimacom/static/css/main.4ed0cfe9.chunk.css.map",
-    "static/js/2.d5743b1e.chunk.js.LICENSE.txt": "/mimacom/static/js/2.d5743b1e.chunk.js.LICENSE.txt",
+    "static/js/2.f4ba71ba.chunk.js.LICENSE.txt": "/mimacom/static/js/2.f4ba71ba.chunk.js.LICENSE.txt",
     "static/media/App.css": "/mimacom/static/media/subtract.1ef7c461.svg",
     "static/media/basket.c8405a74.svg": "/mimacom/static/media/basket.c8405a74.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.556c157b.js",
     "static/css/2.9901cfd6.chunk.css",
-    "static/js/2.d5743b1e.chunk.js",
+    "static/js/2.f4ba71ba.chunk.js",
     "static/css/main.4ed0cfe9.chunk.css",
-    "static/js/main.91523cd3.chunk.js"
+    "static/js/main.42a09dc3.chunk.js"
   ]
 }
