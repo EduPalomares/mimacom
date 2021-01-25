@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from 'store/rootReducer'
+import { useKEvents } from 'hocs/KeyboardEvents'
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 import { addProducts } from 'store/products'
 import { setVisibleBasket } from 'store/ui'
@@ -11,6 +12,7 @@ import Product from './product'
 
 const Products = () => {
   const dispatch = useDispatch()
+  const { addKEvent, removeKEvent } = useKEvents()
 
   const [products, setProducts] = useState([])
   const [productsList, setProductsList] = useState<any>([])
@@ -52,6 +54,23 @@ const Products = () => {
       }, 0)
     )
   }, [basket])
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      addKEvent('ArrowLeft', () => {
+        dispatch(setVisibleBasket(true))
+      })
+
+      addKEvent('ArrowRight', () => {
+        dispatch(setVisibleBasket(false))
+      })
+
+      return () => {
+        removeKEvent('ArrowLeft')
+        removeKEvent('ArrowRight')
+      }
+    }
+  }, [addKEvent, removeKEvent, dispatch])
 
   return (
     <>
